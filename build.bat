@@ -1,0 +1,1 @@
+ikvmc -target:library -sharedclassloader -out:QuantConnect.Fxcm.dll -r:IKVM.Runtime.dll -r:IKVM.OpenJDK.Core.dll fxcm-api.jar fxmsg.jar log4j-1.2.17.jar logkit-1.2.2.jar avalon-framework-4.1.4.jar httpcore-4.4.3.jar httpclient-4.5.1.jar javax.mail-1.4.5.jar javax.jms-1.1.jar commons-codec-1.10.jar javax.servlet-3.0.jar 2> build.log
