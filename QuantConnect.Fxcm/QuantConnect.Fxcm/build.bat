@@ -1,0 +1,1 @@
+ikvmc -target:library -out:QuantConnect.Fxcm.dll -r:IKVM.Runtime.dll -r:IKVM.OpenJDK.Core.dll lib/*.jar
