@@ -143,9 +143,6 @@
     <None Include="lib\commons-codec-1.10.jar">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="lib\commons-logging-1.2.jar">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <None Include="lib\fxcm-api.jar">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -181,7 +178,11 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>build.bat</PostBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PreBuildEvent>build.bat</PreBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
