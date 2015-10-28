@@ -115,7 +115,7 @@ namespace TestFxcm
             var accountId = _accounts.Keys.First();
 
             // we are unable to continue if Hedging enabled
-            if (_accounts[accountId].getParties().getFXCMPositionMaintenance() != "N")
+            if (_accounts[accountId].getParties().getFXCMPositionMaintenance() == "Y")
                 throw new NotSupportedException("The Lean engine does not support accounts with Hedging enabled. Please contact FXCM support to disable Hedging and try again.");
 
             // get open order list
